@@ -18,8 +18,6 @@ const extendElements = $$('.extend')
 optionElements.forEach((option, index) => {
     const extendElement = extendElements[index]
     option.onclick = function () {
-        clickTop()
-
         $('.option-item.active').classList.remove('active')
         $('.extend.active').classList.remove('active')
 
@@ -30,11 +28,6 @@ optionElements.forEach((option, index) => {
 
 
 
-
-
-function clickTop() {
-    document.documentElement.scrollTop = 0;
-}
 
 // Skill
 function showProgress() {
